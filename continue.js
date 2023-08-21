@@ -1,4 +1,4 @@
-//QuerySELECTOR//
+//QuerySELECTORAll//
 var heaser = document.querySelectorAll('.title');
 console.log(titles);
 titles[0].textContent = 'Hello';
