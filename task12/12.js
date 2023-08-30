@@ -17,4 +17,3 @@ function displayData(formData){
 
  parentElement.innerHTML = parentElement.innerHTML + `<li>${formData.name}-${formData.email}-
  ${formData.number}`;
-}
