@@ -39,3 +39,9 @@ items[1].textContent='Hello 2';
 items[1].style.fontWeight='bold';
 
 items[1].style.backgroundColor='yellow';
+
+
+for(var i=1;i<items.length;i++){
+  items[i].style.backgroundColor='#f4f4f4';
+    }
+    
