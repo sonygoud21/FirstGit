@@ -115,3 +115,33 @@
    
    // // newDiv.style.fontSize='30px';
    // container.insertBefore(newDiv,h1);
+
+   //FILTER
+
+   function removeItem(e){
+    if(e.target.classList.contain('delete')){
+        if(confirm('Are you sure')){
+            var li = e.target.parentElement;
+          ItemList.removeChild(li);
+        }
+       // console.log(1);
+    }
+}
+//filter items
+function filterItems(e){
+    //convert to lower-case
+    var text = e.target.value.toLowerCase();
+    ItemList.getElementsByTagName('li');
+
+    //convert to array
+    Array.from(items).forEach(function(item)
+    {
+        var itemName = item.firstChild.textContent;
+        if(itemName.toLowerCase().indexOf(text) != -1){
+            item.style.display='block';
+        }else{
+            item.style.display='none';
+      }
+
+    }
+    
